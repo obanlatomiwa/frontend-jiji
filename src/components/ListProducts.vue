@@ -84,7 +84,7 @@ export default {
   },
   methods: {
     getProducts(){
-      axios.get('http://127.0.0.1:8000/api/products/')
+      axios.get('https://jiji-clone.herokuapp.com/api/products/')
       .then(res => (this.products = res.data))
       .catch(err =>console.log(err))
       console.log(this.products)
@@ -98,7 +98,7 @@ export default {
     },
     updateProduct(){
       this.timer = setTimeout(() => {
-        axios.get('http://127.0.0.1:8000/api/products/')
+        axios.get('https://jiji-clone.herokuapp.com/api/products/')
         .then(res => (this.products = res.data))
         .catch(err => console.log(err))
       }, 500);

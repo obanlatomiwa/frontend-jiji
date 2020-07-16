@@ -46,12 +46,12 @@ export default {
           'Authorization': 'Token' + this.token
         }
       }
-      axios.delete(`http://127.0.0.1:8000/api/products/${this.productdetailitem.id}`, axiosConfig)
+      axios.delete(`https://jiji-clone.herokuapp.com/api/products/${this.productdetailitem.id}`, axiosConfig)
       .then(res => console.log(res.data))
       .catch(err => console.log(err))
     },
     contactSeller(productdetailitem){
-        axios.get(`http://127.0.0.1:8000/admin/jiji_clone_api/users/${this.productdetailitem.id}/change/`)
+        axios.get(`https://jiji-clone.herokuapp.com/admin/jiji_clone_api/users/${this.productdetailitem.id}/change/`)
         .then(res => (this.seller) = res.data)
         .catch(err => console.log(err))
         console.log(this.seller)

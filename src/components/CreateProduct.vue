@@ -55,7 +55,7 @@ export default {
   },
   methods: {
       checkForm(){
-          axios.post('http://127.0.0.1:8000/api/products/', {
+          axios.post('https://jiji-clone.herokuapp.com/api/products/', {
               name: this.name,
               description: this.description,
               image: this.image,

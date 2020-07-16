@@ -58,7 +58,7 @@ export default {
   },
   methods: {
       login(){
-          axios.post('http://127.0.0.1:8000/auth/', {
+          axios.post('https://jiji-clone.herokuapp.com/auth/', {
             firstname: this.firstname,
             lastname: this.lastname,
             email: this.email,
