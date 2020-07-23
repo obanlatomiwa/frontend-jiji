@@ -47,10 +47,6 @@ export default {
   },
   data(){
       return {
-        firstname: '',
-        lastname: '',
-        email: '',
-        residence: '',
         username: '',
         password: '',
         token: localStorage.getItem('user-token') || null,
@@ -59,10 +55,6 @@ export default {
   methods: {
       login(){
           axios.post('https://jiji-clone.herokuapp.com/auth/', {
-            firstname: this.firstname,
-            lastname: this.lastname,
-            email: this.email,
-            residence: this.residence,
             username: this.username,
             password: this.password
           }
