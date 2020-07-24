@@ -61,7 +61,6 @@ export default {
           )
           .then(res => {
               this.token = res.data.token,
-              console.log(this.token),
               localStorage.setItem('user-token', res.data.token)
           })
           .catch(err => {

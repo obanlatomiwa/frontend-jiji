@@ -20,7 +20,7 @@
 
           <div class="form-group">
             <label for="residence">State of Residence</label>
-            <input class="ml-4 form-control" type="text" name="residence" id="residence" v-model="residence">
+            <input class="ml-4 form-control" type="text" name="location" id="location" v-model="location">
           </div>
 
           <div class="form-group">
@@ -55,7 +55,7 @@ export default {
         firstname: null,
         lastname: null,
         email: null,
-        residence: null,
+        location: null,
         username: null,
         password: null, 
       }
@@ -63,11 +63,11 @@ export default {
   methods: {
       createUser(){
           console.log(this.username)
-          axios.post('https://jiji-clone.herokuapp.com/api/users/', {
+          axios.post('https://jiji-clone.herokuapp.com/api/user/', {
               firstname: this.firstname,
               lastname: this.lastname,
               email: this.email,
-              residence: this.residence,
+              location: this.location,
               username: this.username,
               password: this.password,
           })

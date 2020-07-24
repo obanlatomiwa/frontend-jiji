@@ -11,7 +11,7 @@
             <b-list-group class ="text-left text-justify">
             <b-list-group-item v-bind:key="product.id" v-for= "product in products">
               <a href="#" class="btn sm btn-light mt-2 mb-3" v-on:click="productDetail(product)">
-                {{product.description}}
+                {{product.name}}
               </a>               
             </b-list-group-item>
             </b-list-group>

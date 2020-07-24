@@ -10,7 +10,8 @@
             <p class="card-title"><span class= "span-text">Product: </span> {{ productdetailitem.name }}</p>
             <p class="card-text"> <span class= "span-text">Description:</span> {{ productdetailitem.description }}</p>
             <p class="card-text"> <span class= "span-text">Price: </span>{{productdetailitem.price}} NGN</p>
-            <p class="card-text"> <span class= "span-text">Location:</span> {{productdetailitem.location}}</p>
+            <!-- <p class="card-text"> <span class= "span-text">Location:</span> {{productdetailitem.location}}</p> -->
+            <p class="card-text"> <span class= "span-text">Location:</span> Lagos</p>
             <button class="btn-sm btn-danger mt-2 mb-3" v-if="token!==null" v-on:click="productDelete(productdetailitem)" @click="$emit('deleted', productdetailitem)">Delete Product</button>
             <button class="btn-sm btn-danger mt-2 mb-3" v-if="token==null" v-on:click="contactSeller(productdetailitem)" @click="$emit('deleted', productdetailitem)">Contact Seller</button>
         </div>
